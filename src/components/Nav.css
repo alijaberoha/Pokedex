@@ -1,0 +1,50 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  position: relative;
+  background-color: bisque;
+  color: white;
+  border: 3px solid;
+}
+
+nav img {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+.ligne {
+  height: 2px;
+  width: 80vw;
+  background-color: black;
+  position: absolute;
+  left: 100px;
+  z-index: 1;
+}
+
+.navig {
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.navig ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navig li a {
+  text-decoration: none;
+  
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+

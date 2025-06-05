@@ -1,0 +1,78 @@
+.contain-Poke {
+  min-height: 100vh;
+  width: 100vw;
+  background-size:25%;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Barlow Condensed', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;                 
+  background-image: url("/src/assets/poke2.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.poke-card {
+  background-color: #ffffff;
+  border: 3px solid #333;
+  border-radius: 16px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+.poke-card img{
+  width: 200px;
+}
+
+.triangle-btn {
+  margin-top: 20;
+  cursor: pointer;
+  background-color: rgb(45, 122, 250);
+  border-radius: 20px;
+  border: 5px solid black;
+  padding: 50px;
+  color: white;
+}
+
+/* ✅ Responsive Tablette */
+@media (max-width: 900px) {
+  .poke-card {
+    width: 80%;
+  }
+
+  .poke-card img {
+    width: 150px;
+  }
+
+  .poke-card h2 {
+    font-size: 24px;
+  }
+}
+
+/* ✅ Responsive Mobile */
+@media (max-width: 600px) {
+  .poke-card {
+    padding: 20px;
+  }
+
+  .poke-card img {
+    width: 120px;
+  }
+
+  .infos {
+    font-size: 14px;
+  }
+
+  .triangle-btn {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid #ffffff;
+  }
+}

@@ -1,0 +1,198 @@
+.contain-Home {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url("../assets/bg-home2.jpg");
+  background-position: center;
+  color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Sélection du dresseur */
+.trainer-selection {
+  margin-top: 40px;
+  border: 2px solid black;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.trainer-options {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.trainer-img {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.trainer-img:hover {
+  transform: scale(1.1);
+}
+
+/* Partie starter */
+.ctn {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.place {
+  border: 3px solid black;
+  width: 700px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.starter-pack {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.starter-card {
+  border: 2px solid white;
+  border-radius: 16px;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.starter-card:hover {
+  transform: scale(1.05);
+}
+
+.starter-card img {
+  width: 100px;
+  height: auto;
+}
+
+.starter-card p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Écran de chargement */
+.loading-screen {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  z-index: 10;
+}
+
+/* Animation pokéball */
+.ball-animation {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.ball-small {
+  width: 150px;
+  animation: grow 2s forwards;
+}
+
+.ball-open {
+  width: 300px;
+  animation: fadeIn 2s 3s forwards;
+  display: none;
+}
+
+@keyframes grow {
+  0% { transform: scale(0.1); opacity: 0.3; }
+  100% { transform: scale(2); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Résultat final */
+.adventure {
+  margin-top: 50px;
+  animation: fadeIn 1s ease-in;
+}
+
+.team {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.trainer-img-small {
+  width: 120px;
+  height: auto;
+}
+
+.chosen-poke {
+  width: 120px;
+  height: auto;
+}
+
+/* Flou d’arrière-plan */
+.fond-flou {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive tablette */
+@media (max-width: 900px) {
+  .place {
+    width: 90%;
+  }
+
+  .trainer-img {
+    width: 90px;
+  }
+
+  .starter-card img {
+    width: 80px;
+  }
+}
+
+/* Responsive mobile */
+@media (max-width: 600px) {
+  .starter-pack {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trainer-selection {
+    flex-direction: column;
+  }
+
+  .starter-card {
+    width: 80%;
+  }
+
+  .trainer-img {
+    width: 100px;
+  }
+
+  .trainer-img-small,
+  .chosen-poke {
+    width: 90px;
+  }
+}
