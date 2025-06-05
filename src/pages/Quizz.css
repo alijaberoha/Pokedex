@@ -8,7 +8,6 @@
   font-family: 'Barlow Condensed', sans-serif;
   box-sizing: border-box;
   text-align: center;
-  padding: 20px;
 }
 
 .flex {
@@ -29,10 +28,11 @@
   width: 300px;
   margin: 20px auto;
   filter: brightness(0) contrast(1000%);
-  transition: filter 1s ease;
 }
 
 .poke-img.reveal {
+transition: filter 1s ease;
+
   filter: none;
 }
 
